@@ -242,7 +242,7 @@
                 adjustBackgroundPosition(clipText, clipContainer);
             });
             
-            observeResize(clipContainer, 1000, (target) => {
+            observeResize(clipContainer, 100, (target) => {
                 redraw();
                 clipTexts.forEach((clipText) => {
                     clipText.style.backgroundImage = `url(${backgroundElement.toDataURL('image/jpeg', 0.1)})`;
