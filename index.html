@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 150vh;
+        }
+        main {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(calc(400px - 40px), 1fr));
+            gap: 40px;
+        }
+        @media (max-width: 400px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card {
+            padding: 20px;
+            position: relative;
+            border-radius: 7px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0,0,0, 0.6);
+            background-image: linear-gradient(315deg, rgba(238,174,202,0.2) 0%, rgba(148,187,233,0.20351890756302526) 49%, rgba(148,187,233,0) 73%);
+            box-shadow: 2px 2px 10px 0 rgba(0,0,0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.4)
+        }
+        .card > *:not(:first-child) {
+            margin-top: 10px;
+        }
+        .label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .text {
+            font-size: 14px;
+        }
+        .category {
+            display: flex;
+            gap: 10px;
+        }
+        .category li {
+            list-style: none;
+            padding: 4px;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body class="clip-container">
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+            <div class="card">
+                <p class="clip-text label">
+                    ここにタイトルが入ります。ここにタイトルが入ります。
+                </p>
+                <ul class="category">
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                    <li>ジャンル</li>
+                </ul>
+                <p class="clip-text text">ここに詳細内容が入ります。</p>
+            </div>
+        </div>
+    </main>
+    <script>        
+        const drawBackgroundElement = (backgroundElement) => {
+            return new Promise((resolve) => {
+                const scale = window.devicePixelRatio;
+                const ctx = backgroundElement.getContext('2d');
+                const parent = backgroundElement.parentElement;
+                const img = new Image();
+                const draw = () => {
+                    backgroundElement.width = parent.offsetWidth;
+                    backgroundElement.height = parent.offsetHeight;
+
+                    const grad = ctx.createLinearGradient(0, 0, backgroundElement.width, 0);
+                    grad.addColorStop(0, 'rgba(63,94,251,1)');
+                    grad.addColorStop(1, 'rgba(252,70,107,1)');
+                    ctx.fillStyle = grad;
+                    ctx.rect(0, 0, backgroundElement.width, backgroundElement.height);
+                    ctx.fill();
+                    ctx.drawImage(img, backgroundElement.width - img.naturalWidth / 2, backgroundElement.height - img.naturalHeight / 2);
+                    ctx.drawImage(img, backgroundElement.width - img.naturalWidth / 1.5, backgroundElement.height - img.naturalHeight);
+                };
+
+                img.src = './sample.png'
+                img.addEventListener('load', () => {
+                    draw();
+                    resolve(draw);
+                });
+            });
+        };
+        const adjustBackgroundPosition = (target, container) => {
+            const containerBoundingRect = container.getBoundingClientRect();
+            const containerLeft = containerBoundingRect.left;
+            const containerTop = containerBoundingRect.top;
+            
+            const targetBoundingRect = target.getBoundingClientRect();
+            const targetLeft = targetBoundingRect.left;
+            const targetTop = targetBoundingRect.top;
+            
+            target.style.backgroundPosition = `${containerLeft - targetLeft}px ${containerTop - targetTop}px`;
+        };
+        const createBackgroundElement = () => {
+            const backgroundElement = document.createElement('canvas');
+            backgroundElement.classList.add('background-element')
+            backgroundElement.style.cssText = 'display: block; position: absolute; left: 0; top: 0; z-index: -1; width: 100%; height: 100%;';
+
+            return backgroundElement;
+        };
+        const attachBackgroundElement = (backgroundElement, target, changeTargetPositionProperty = true) => {
+            if (changeTargetPositionProperty) target.style.position = 'relative';
+            target.append(backgroundElement);
+        };
+        const observeResize = (target, observeInterval, callback) => {
+            let lastResizeTime = performance.now();
+            const observer = new ResizeObserver(([{target}]) => {
+                const currentTime = performance.now();
+                if (lastResizeTime + observeInterval < currentTime) {
+                    callback(target);
+                    lastResizeTime = currentTime;
+                }
+            });
+
+            observer.observe(target);
+        };
+        const initialize = async () => {
+            const clipTexts = document.querySelectorAll('.clip-text');
+            const clipContainer = document.querySelector('.clip-container');
+            const backgroundElement = createBackgroundElement();
+            attachBackgroundElement(backgroundElement, clipContainer);
+            const redraw = await drawBackgroundElement(backgroundElement);
+            
+            clipTexts.forEach((clipText) => {
+                clipText.style.cssText = '-webkit-background-clip: text; background-clip: text; color: transparent;';
+                clipText.style.backgroundImage = `url(${backgroundElement.toDataURL('image/jpeg', 0.1)})`;
+                adjustBackgroundPosition(clipText, clipContainer);
+            });
+            
+            observeResize(clipContainer, 1000, (target) => {
+                redraw();
+                clipTexts.forEach((clipText) => {
+                    clipText.style.backgroundImage = `url(${backgroundElement.toDataURL('image/jpeg', 0.1)})`;
+                    adjustBackgroundPosition(clipText, target);
+                });
+            });
+        };
+
+        initialize();
+    </script>
+</body>
+</html>
